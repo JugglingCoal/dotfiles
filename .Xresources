@@ -1,4 +1,4 @@
-! $ xrdb -merge .Xresources
+! $ xrdb merge .Xresources
 ! will update config
 
 Xft.dpi:       96
@@ -60,9 +60,10 @@ XTerm*selectToClipboard: true
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
 
-! URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
-urxvt.font: xft:Monospace:size=8:antialias=true
-urxvt.boldFont: xft:Monospace:bold:size=8:antialias=true
+URxvt.font:                     xft:DejaVu Sans Mono:autohint=true:size=8
+URxvt.boldFont:                 xft:DejaVu Sans Mono:autohint=true:bold:size=8
+URxvt.italicFont:               xft:DejaVu Sans Mono:autohint=true:italic:size=8
+URxvt.boldItalicFont:           xft:DejaVu Sans Mono:autohint=true:bold:italic:size=8
 
 ! alternative font settings with 'terminus':
 ! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
@@ -183,6 +184,7 @@ URxvt*internalBorder:               10
 ! URxvt*borderLess:                 true
 ! URxvt*lineSpace:                  number
 ! URxvt*letterSpace:                number
+URxvt*letterSpace:                  -1
 ! URxvt*skipBuiltinGlyphs:          boolean
 ! URxvt*pointerBlankDelay:          number
 ! URxvt*backspacekey:               string
