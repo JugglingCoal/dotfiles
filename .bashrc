@@ -98,6 +98,7 @@ alias np='nano -w PKGBUILD'
 alias mpv='mpv --hwdec=vaapi --vo=gpu'
 alias vi='vim'
 alias more=less
+alias hmpv='mpv --audio-device=alsa/hdmi:CARD=PCH,DEV=0'
 
 xhost +local:root > /dev/null 2>&1
 
