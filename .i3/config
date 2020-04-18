@@ -53,6 +53,9 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 exec --no-startup-id volumeicon
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 5%- && notify-send $(amixer | grep '%' -m 1 | cut -d'[' -f2 | cut -d']' -f1)
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+ && notify-send $(amixer | grep '%' -m 1 | cut -d'[' -f2 | cut -d']' -f1)
+bindsym XF86AudioMute exec amixer -q sset Master toggle && notify-send 'Mute Toggled'
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
@@ -218,7 +221,8 @@ for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="Simple-scan"] floating enable border normal
+for_window [class="Simple-scan"] floating enable border none
+for_window [class="Simple-scan"] [floating] resize set 640 640
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
