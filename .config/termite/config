@@ -1,0 +1,56 @@
+[options]
+	resize_grip = false
+	scroll*on*output = true
+	scroll*on*keystroke = true
+	audible_bell = true
+	visible_bell = false
+	mouse_autohide = true
+	allow_bold = true
+	dynamic_title = true
+	urgent*on*bell = true
+	clickable_url = true
+	font = DejaVu Sans Mono 8
+	scrollback_lines = 1000
+	search_wrap = true
+
+	#icon_name = terminal
+	#geometry = 640x480
+
+	# "system", "on" or "off"
+	cursor_blink = system
+	# "block", "underline" or "ibeam"
+	cursor_shape = block
+
+	# $BROWSER is used by default
+	browser = firefox
+
+[colors]
+	foreground = #a0a0a0
+	#foreground_bold = #ffffff
+	#foreground_dim = #888888
+	background = #222D31
+	cursor = #1ABB9B
+	color0 = #222D31
+	color1 = #ab4642
+	color2 = #7E807E
+	color3 = #f7ca88
+	color4 = #7cafc2
+	color5 = #ba8baf
+	color6 = #1ABB9B
+	color7 = #d8d8d8
+	color8 = #585858
+	color9 = #ab4642
+	color10 = #8D8F8D
+	color11 = #f7ca88
+	color12 = #7cafc2
+	color13 = #ba8baf
+	color14 = #1ABB9B
+	color15 = #f8f8f8
+
+[hints]
+	foreground = #d8d8d8
+	background = #222D31
+	padding = 10
+	#border = #3f3f3f
+	#border_width = 0.5
+	#roundness = 2.0
